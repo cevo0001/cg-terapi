@@ -1,0 +1,126 @@
+<section class="preview-section">
+
+  <div class="preview-image">
+    <img src="/images/charlotte.webp" alt="">
+  </div>
+
+  <div class="preview-content">
+
+    <h2>Jeg hedder Charlotte Grøngaard</h2>
+
+    <p>
+      Her står der tekst omkring hende, hvad hun brænder
+      for og vil hjælpe andre kvinder med.
+      Her står der tekst omkring hende, hvad hun brænder
+      for og vil hjælpe andre kvinder med.
+    </p>
+
+    <a href="/om-mig" class="preview-button">
+      Læs mere om mig
+    </a>
+
+  </div>
+
+  <img class="flower-big" src="/images/flower-big.svg" alt="">
+  <img class="flower-small" src="/images/flower-small.svg" alt="">
+
+</section>
+
+<style>
+
+  .preview-section {
+    position: relative;
+
+    padding: 60px 24px;
+
+    background: var(--beige);
+
+    border-bottom: 1px solid var(--brown);
+
+    display: grid;
+    gap: 40px;
+
+    overflow: hidden;
+  }
+
+  .preview-image img {
+    width: 100%;
+    max-width: 320px;
+
+    border: 1px solid var(--brown);
+
+    display: block;
+  }
+
+  .preview-content h2 {
+    font-size: 42px;
+
+    margin-bottom: 20px;
+  }
+
+  .preview-content p {
+    max-width: 600px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+  }
+
+  .preview-button {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border-radius: 999px;
+
+    background: var(--dark-green);
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-family: 'Source Serif Pro', serif;
+
+    transition: 0.3s;
+  }
+
+  .preview-button:hover {
+    background: var(--brown);
+  }
+
+  .flower-big {
+    position: absolute;
+
+    right: -40px;
+    top: 40px;
+
+    width: 260px;
+
+    opacity: 0.25;
+  }
+
+  .flower-small {
+    position: absolute;
+
+    right: 260px;
+    bottom: 40px;
+
+    width: 90px;
+  }
+
+  @media (min-width: 900px) {
+
+    .preview-section {
+
+      grid-template-columns: 320px 1fr;
+
+      align-items: center;
+
+      padding: 80px;
+
+      gap: 90px;
+    }
+
+  }
+
+</style>
