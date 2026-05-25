@@ -1,0 +1,94 @@
+<section class="cta-section">
+  <div class="overlay">
+
+    <div class="cta-content">
+      <div class="cta-text">
+        <h2>Klar til at tage første skridt?</h2>
+
+        <p>
+          Jeg er her for at støtte dig på rejsen
+        </p>
+      </div>
+
+      <a href="/kontakt" class="cta-button">
+        Book din tid
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .cta-section {
+    background-image: url('/images/cta.webp');
+    background-size: cover;
+    background-position: center;
+
+    border-bottom: 1px solid var(--brown);
+  }
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.12);
+    padding: 70px 24px;
+  }
+
+  .cta-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .cta-text h2 {
+    color: var(--white);
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
+  .cta-text p {
+    color: var(--white);
+    font-size: 18px;
+  }
+
+  .cta-button {
+    width: fit-content;
+
+    padding: 14px 34px;
+
+    border-radius: 999px;
+    border: 1px solid var(--brown);
+
+    background: var(--white);
+    color: var(--brown);
+
+    text-decoration: none;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+
+    transition: 0.3s;
+  }
+
+  .cta-button:hover {
+    background: var(--dark-green);
+    color: var(--white);
+  }
+
+  @media (min-width: 900px) {
+
+    .overlay {
+      padding: 80px;
+    }
+
+    .cta-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .cta-text h2 {
+      font-size: 40px;
+    }
+  }
+</style>
