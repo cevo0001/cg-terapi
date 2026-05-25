@@ -1,0 +1,100 @@
+---
+import Button from './Button.astro';
+---
+
+<header class="header">
+
+  <a href="/">
+    <img
+      src="/images/logo.svg"
+      alt="Logo"
+      class="logo"
+    />
+  </a>
+
+  <div class="burger">
+    ☰
+  </div>
+
+  <nav class="nav">
+
+    <a href="/behandlinger">Behandlinger</a>
+
+    <a href="/om-mig">Om mig</a>
+
+    <a href="/priser">Priser</a>
+
+    <a href="/kontakt">Kontakt</a>
+
+    <Button
+      text="Book tid"
+      link="/kontakt"
+      className="btn"
+    />
+
+  </nav>
+
+</header>
+
+<style>
+
+.header {
+  height: 90px;
+
+  padding: 0 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--cream);
+
+  border-bottom: 1px solid var(--brown);
+}
+
+.logo {
+  width: 75px;
+}
+
+.burger {
+  font-size: 34px;
+
+  color: var(--brown);
+
+  cursor: pointer;
+}
+
+.nav {
+  display: none;
+}
+
+@media (min-width: 900px) {
+
+  .burger {
+    display: none;
+  }
+
+  .header {
+    padding: 0 50px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+  }
+
+  .nav a {
+    text-decoration: none;
+
+    color: var(--brown);
+
+    font-size: 18px;
+
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+  }
+
+}
+
+</style>

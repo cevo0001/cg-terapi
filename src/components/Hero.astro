@@ -1,0 +1,125 @@
+---
+import Button from './Button.astro';
+---
+
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h1>Charlotte Grøngaard</h1>
+
+    <h2>
+      Et trygt rum til kvinder i
+      overgang & udvikling
+    </h2>
+
+    <p>
+      Holistisk terapi der skaber balance i
+      krop, sind og nervesystem.
+    </p>
+
+    <div class="button-row">
+
+      <Button
+        text="Book tid"
+        link="/kontakt"
+        className="btn"
+      />
+
+      <Button
+        text="Mine behandlinger"
+        link="/behandlinger"
+        className="btn-secondary"
+      />
+
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+
+.hero {
+  min-height: 430px;
+
+  padding: 60px 24px;
+
+
+  background-image:
+    linear-gradient(
+      rgba(255,248,233,0.35),
+      rgba(255,248,233,0.35)
+    ),
+      url('/images/hero.webp');
+
+  background-size: cover;
+  background-position: center;
+
+  border-bottom: 1px solid var(--brown);
+}
+
+.hero-text {
+  max-width: 490px;
+}
+
+.hero h1 {
+  font-size: 40px;
+
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 20px;
+
+  line-height: 1.2;
+  margin-right: 80px;
+
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 19px;
+
+  line-height: 1.5;
+
+  font-style: italic;
+
+  margin-bottom: 60px;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  align-items: flex-start;
+}
+
+@media (min-width: 900px) {
+
+  .hero {
+  padding: 70px;
+  padding-left: 150px;
+
+  }
+
+  .hero h1 {
+    font-size: 56px;
+  }
+
+  .hero h2 {
+    font-size: 35px;
+    
+  }
+
+  .button-row {
+    flex-direction: row;
+    margin-bottom: -40px;
+    gap: 33px;
+  }
+
+}
+
+</style>

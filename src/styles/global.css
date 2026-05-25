@@ -1,8 +1,14 @@
 :root {
-  --bg: #f6f2ea;
-  --green: #7b846d;
-  --text: #4d5048;
-  --line: #d9d1c6;
+  --white: #fffdfa;
+  --cream: #fff8e9;
+  --black: #1b1b1b;
+  --brown: #574138;
+
+  --light-green: #b3b6a5;
+  --dark-green: #657561;
+
+  --beige: #f0e9db;
+  --sand: #bdac93;
 }
 
 * {
@@ -12,80 +18,71 @@
 }
 
 body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: Arial, sans-serif;
+  background: var(--beige);
+  color: var(--brown);
+
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
 }
 
-h1 {
-  font-family: Georgia, serif;
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 1.1;
+img {
+  max-width: 100%;
+  display: block;
 }
 
-p {
-  line-height: 1.7;
+h1,
+h2,
+h3 {
+  font-family: 'Source Sans 3', serif;
+  font-weight: 200;
 }
 
-.hero {
-  min-height: 100vh;
 
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-}
 
-.hero-text {
-  padding: 100px 80px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hero-text p {
-  max-width: 400px;
-
-  margin-top: 30px;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 20px;
-
-  margin-top: 40px;
-}
 
 .btn,
-.btn-outline {
-  padding: 16px 30px;
+.btn-secondary,
+.btn-light {
+  display: inline-flex;
 
-  border-radius: 999px;
-
-  text-decoration: none;
-
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.btn {
-  background: var(--green);
-  color: white;
-}
-
-.btn-outline {
-  border: 1px solid var(--text);
-  color: var(--text);
-}
-
-.hero-image {
-  background: #ddd3c7;
-
-  display: flex;
   justify-content: center;
   align-items: center;
 
-  font-size: 14px;
-  letter-spacing: 2px;
+  min-width: 160px;
+
+  padding: 10px 30px;
+
+  border-radius: 999px;
+
+  border: 1px solid var(--brown);
+
+  text-decoration: none;
+
+  font-family: 'Source Serif 4', serif;
+  font-weight: 400;
+
+  text-align: center;
+
+  transition: 0.5s;
+}
+
+.btn:hover,
+.btn-secondary:hover,
+.btn-light:hover {
+  opacity: 0.5;
+}
+
+.btn {
+  background: var(--dark-green);
+  color: var(--cream);
+}
+
+.btn-secondary {
+  background: var(--sand);
+  color: var(--brown);
+}
+
+.btn-light {
+  background: var(--cream);
+  color: var(--brown);
 }
