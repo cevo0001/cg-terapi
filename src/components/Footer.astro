@@ -1,0 +1,135 @@
+<footer class="footer">
+
+  <div class="footer-logo">
+    <img src="/images/logo.svg" alt="">
+  </div>
+
+  <div class="footer-info">
+
+    <h3>Charlotte Grøngaard</h3>
+
+    <p>
+      Holistisk terapi for krop, sind og nervesystem.
+    </p>
+
+  </div>
+
+  <div class="footer-contact">
+
+    <h4>Kontakt</h4>
+
+    <p>Kontakt@charlottegrongaard.dk</p>
+
+    <p>+45 11 11 11 11</p>
+
+  </div>
+
+  <div class="footer-socials">
+
+    <a href="#">
+      <div class="social-circle"></div>
+    </a>
+
+    <a href="#">
+      <div class="social-circle"></div>
+    </a>
+
+  </div>
+
+</footer>
+
+<style>
+
+  .footer {
+    padding: 40px 24px;
+
+    background: var(--cream);
+
+    border-top: 1px solid var(--brown);
+
+    display: grid;
+    gap: 35px;
+
+    text-align: center;
+  }
+
+  .footer-logo img {
+    width: 100px;
+
+    margin: 0 auto;
+  }
+
+  .footer-info h3 {
+    font-size: 26px;
+
+    margin-bottom: 8px;
+  }
+
+  .footer-info p,
+  .footer-contact p {
+    line-height: 1.7;
+  }
+
+  .footer-contact h4 {
+    margin-bottom: 12px;
+
+    font-size: 20px;
+  }
+
+  .footer-socials {
+    display: flex;
+    justify-content: center;
+
+    gap: 18px;
+  }
+
+  .social-circle {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: var(--dark-green);
+
+    transition: 0.3s;
+  }
+
+  .social-circle:hover {
+    background: var(--brown);
+  }
+
+  @media (min-width: 900px) {
+
+    .footer {
+
+      grid-template-columns:
+      180px
+      1fr
+      1fr
+      180px;
+
+      align-items: center;
+
+      text-align: left;
+
+      padding: 55px 80px;
+    }
+
+    .footer-logo img {
+      margin: 0;
+    }
+
+    .footer-socials {
+      justify-content: flex-end;
+    }
+
+    .footer-info,
+    .footer-contact {
+      padding-left: 60px;
+
+      border-left: 1px solid rgba(87, 65, 56, 0.3);
+    }
+
+  }
+
+</style>
