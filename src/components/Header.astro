@@ -2,7 +2,7 @@
 import Button from './Button.astro';
 ---
 
-<header class="header">
+<header class="header" id="header">
 
   <a href="/">
     <img
@@ -39,6 +39,13 @@ import Button from './Button.astro';
 <style>
 
 .header {
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+
   height: 90px;
 
   padding: 0 24px;
@@ -94,6 +101,10 @@ import Button from './Button.astro';
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 300;
   }
+
+  .hide {
+  transform: translateY(-100%);
+}
 
 }
 
