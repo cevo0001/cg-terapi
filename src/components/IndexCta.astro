@@ -20,49 +20,66 @@
 
 <style>
   .cta-section {
-    background-image: url('/images/cta.webp');
+    background-image: url('/images/siv.png');
     background-size: cover;
     background-position: center;
 
-    border-bottom: 1px solid var(--brown);
+    border-botto: 1px solid var(--brown);
   }
 
   .overlay {
-    background: rgba(0, 0, 0, 0.12);
-    padding: 70px 24px;
+    background: rgba(0, 0, 0, 0.16);
+
+    padding: 55px 22px;
   }
 
   .cta-content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+
+    align-items: center;
+    text-align: center;
+
+    gap: 26px;
+
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   .cta-text h2 {
-    color: var(--white);
-    font-size: 34px;
-    margin-bottom: 10px;
+    color: var(--cream);
+
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.15;
+
+    margin-bottom: 12px;
   }
 
   .cta-text p {
-    color: var(--white);
-    font-size: 18px;
+    color: var(--cream);
+    font-weight: 400;
+    font-size: 17px;
+
+    line-height: 1.5;
   }
 
   .cta-button {
     width: fit-content;
 
-    padding: 14px 34px;
+    padding: 13px 28px;
 
     border-radius: 999px;
     border: 1px solid var(--brown);
 
-    background: var(--white);
+    background: var(--cream);
     color: var(--brown);
 
     text-decoration: none;
+
     font-family: 'Source Serif Pro', serif;
-    font-size: 18px;
+
+    font-size: 17px;
 
     transition: 0.3s;
   }
@@ -75,20 +92,34 @@
   @media (min-width: 900px) {
 
     .overlay {
-      padding: 80px;
+      padding: 70px;
     }
 
     .cta-content {
       flex-direction: row;
+
       justify-content: space-between;
       align-items: center;
 
+      text-align: left;
+
       max-width: 1200px;
-      margin: 0 auto;
     }
 
     .cta-text h2 {
-      font-size: 40px;
+    
+      font-size: 30px;
     }
+
+    .cta-text p {
+      font-size: 18px;
+    }
+
+    .cta-button {
+      font-size: 18px;
+        margin-right: 50px;
+      padding: 11px 34px;
+    }
+
   }
 </style>

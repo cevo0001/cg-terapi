@@ -51,15 +51,14 @@ import Button from './Button.astro';
 
   background-image:
     linear-gradient(
-      rgba(255, 248, 233, 0.28),
-      rgba(255, 248, 233, 0.28)
+      rgba(255, 248, 233, 0),
+      rgba(255, 248, 233, 0.243)
     ),
-    url('/images/hero.webp');
+    url('/images/hero.png');
 
   background-size: cover;
   background-position: center;
 
-  border-bottom: 1px solid var(--brown);
 }
 
 .hero-text {
@@ -126,6 +125,8 @@ import Button from './Button.astro';
     line-height: 1.5;
     font-style: italic;
     margin-bottom: 60px;
+
+    color: var(--black);
   }
 
   .button-row {
