@@ -22,7 +22,7 @@ Beslut, hvordan I vil organisere jeres projekt – struktur for mapper og filer.
 Beslutte hvordan i vil navngive filer og mapper for at sikre en ensartet struktur og undgå forvirring.
 
 - Hvordan navngiver I filnavne? (fx små bogstaver, ingen mellemrum, brug af - eller \_)
-  Components starter med stort forbogstav. resten er i udgangspunktet små bogstaver - men ex. i MainLayout, er begge ord i sætningen med stort.
+  Components starter med stort forbogstav. resten er i udgangspunktet små bogstaver - men ex. i MainLayout, er begge ord i sætningen med stort. Kalder alle komponenter med engelske navne, fordi det er mere stilet. Men Pages er på dansk så navnene passer på siden. 
 
 - Hvordan sikre I at det er til at forstå hvilke HTML-, CSS- og JavaScript-filer der høre sammen?
   De kommer til at have det samme navn, til dem der tilhører hinanden - ex. Header.astro, Header.js osv. Og jeg koder også al css udover global css under hvert komponent, så det passer til det jeg arbejder på. 
