@@ -1,0 +1,33 @@
+<section class="contact-layout">
+
+  <slot />
+
+</section>
+
+<style>
+
+  .contact-layout {
+    display: grid;
+
+    gap: 35px;
+
+    padding: 45px 24px;
+
+    background: var(--light-green);
+
+    border-bottom: 1px solid var(--brown);
+  }
+
+  @media (min-width: 900px) {
+
+    .contact-layout {
+      grid-template-columns: 1fr 1fr;
+
+      padding: 70px 90px;
+
+      gap: 70px;
+    }
+
+  }
+
+</style>
