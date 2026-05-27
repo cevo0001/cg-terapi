@@ -1,0 +1,84 @@
+<section class="about-hero">
+  <div class="about-text">
+    <h1>Jeg hedder Charlotte Grøngaard</h1>
+
+    <div class="line"></div>
+
+    <p>
+      Mine behandlinger er skabt til at støtte dig i at finde mere ro, styrke og nærvær i din hverdag.
+    </p>
+
+    <img class="doodle" src="/images/flower-small.svg" alt="" />
+  </div>
+
+  <div class="about-image">
+    <img src="/images/ch.jpg" alt="Charlotte Grøngaard" />
+  </div>
+</section>
+
+<style>
+  .about-hero {
+    background: var(--beige);
+    border-bottom: 1px solid var(--brown);
+    display: grid;
+  }
+
+  .about-text {
+    padding: 55px 24px;
+  }
+
+  .about-text h1 {
+    font-size: 38px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  .line {
+    width: 85px;
+    height: 1px;
+    background: var(--brown);
+    margin-bottom: 22px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    font-style: italic;
+    max-width: 330px;
+  }
+
+  .doodle {
+    width: 150px;
+    margin-top: 35px;
+    opacity: 0.6;
+  }
+
+  .about-image {
+    background: var(--sand);
+  }
+
+  .about-image img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+  }
+
+  @media (min-width: 900px) {
+    .about-hero {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .about-text {
+      padding: 90px 80px;
+    }
+
+    .about-text h1 {
+      font-size: 52px;
+      max-width: 520px;
+    }
+
+    .about-image img {
+      height: 520px;
+    }
+  }
+</style>

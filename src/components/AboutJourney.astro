@@ -1,0 +1,70 @@
+<section class="journey-section">
+  <h2>Min rejse</h2>
+  <div class="line"></div>
+
+  <div class="journey-content">
+    <p>
+      Min egen rejse har lært mig, hvor vigtigt det er at lytte til kroppens signaler og give sig selv lov til at stoppe op.
+    </p>
+
+    <img src="/images/journey.webp" alt="" />
+
+    <p>
+      Jeg har uddannet mig inden for helhedsorienterede metoder, så jeg kan støtte dig med nærvær, ro og respekt for den proces, du er i.
+    </p>
+  </div>
+</section>
+
+<style>
+  .journey-section {
+    padding: 50px 24px;
+    background: var(--beige);
+    border-bottom: 1px solid var(--brown);
+    text-align: center;
+  }
+
+  .journey-section h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
+  .line {
+    width: 160px;
+    height: 1px;
+    background: var(--brown);
+    margin: 0 auto 35px;
+  }
+
+  .journey-content {
+    display: grid;
+    gap: 28px;
+  }
+
+  .journey-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .journey-content img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 900px) {
+    .journey-section {
+      padding: 70px 80px;
+    }
+
+    .journey-section h2 {
+      font-size: 42px;
+    }
+
+    .journey-content {
+      grid-template-columns: 1fr 320px 1fr;
+      align-items: center;
+      gap: 70px;
+    }
+  }
+</style>
