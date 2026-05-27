@@ -1,0 +1,171 @@
+---
+import Layout from '../layouts/Layout.astro';
+import IndexCta from '../components/IndexCta.astro';
+import Testimonials from '../components/Testimonials.astro';
+---
+
+<Layout>
+  <section class="treatment-hero">
+    <div class="hero-text">
+      <h1>Psykoterapi</h1>
+      <h2>Samtaleterapi med krop, sind og nervesystem i fokus</h2>
+
+      <p>
+        Psykoterapi handler om at se hele dig. Sammen skaber vi et trygt rum,
+        hvor du kan lande, få indsigt og finde nye måder at være i livet på.
+      </p>
+
+      <a href="/kontakt" class="btn">Book din tid</a>
+    </div>
+
+    <img src="/images/therapy-hero.webp" alt="" />
+  </section>
+
+  <section class="process-section">
+    <img src="/images/therapy-room.webp" alt="" />
+
+    <div>
+      <h2>Sådan foregår det</h2>
+
+      <ol>
+        <li><strong>Vi lander</strong><br />Du bliver mødt præcis, som du er.</li>
+        <li><strong>Vi udforsker</strong><br />Vi undersøger tanker, følelser og mønstre.</li>
+        <li><strong>Vi skaber forandring</strong><br />Du får redskaber til dit eget tempo.</li>
+        <li><strong>Du går lettere herfra</strong><br />Med mere ro og klarhed.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <h2>Hvad er psykoterapi?</h2>
+
+    <p>
+      Her står der tekst omkring behandlingen, hvad den kan hjælpe med, og
+      hvordan den støtter klienten i processen.
+    </p>
+
+    <p>
+      Her kan du uddybe behandlingen med fokus på tryghed, nærvær, kropslig
+      bevidsthed og personlig udvikling.
+    </p>
+  </section>
+
+  <IndexCta />
+  <Testimonials />
+</Layout>
+
+<style>
+  .treatment-hero {
+    padding: 45px 24px;
+    background: var(--beige);
+    border-bottom: 1px solid var(--brown);
+    display: grid;
+    gap: 32px;
+  }
+
+  .hero-text {
+    max-width: 520px;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 18px;
+  }
+
+  .hero-text h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+  .treatment-hero img {
+    width: 100%;
+    border-radius: 0 0 80px 0;
+    object-fit: cover;
+  }
+
+  .process-section {
+    padding: 45px 24px;
+    background: var(--beige);
+    border-bottom: 1px solid var(--brown);
+    display: grid;
+    gap: 32px;
+  }
+
+  .process-section img {
+    width: 100%;
+  }
+
+  .process-section h2,
+  .info-section h2 {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  ol {
+    display: grid;
+    gap: 18px;
+    list-style-position: inside;
+  }
+
+  li {
+    line-height: 1.6;
+  }
+
+  .info-section {
+    padding: 50px 24px;
+    background: var(--sand);
+    border-bottom: 1px solid var(--brown);
+    display: grid;
+    gap: 24px;
+  }
+
+  .info-section p {
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  @media (min-width: 900px) {
+    .treatment-hero {
+      grid-template-columns: 1fr 1.25fr;
+      align-items: center;
+      padding: 70px 100px;
+      gap: 80px;
+    }
+
+    .hero-text h1 {
+      font-size: 56px;
+    }
+
+    .hero-text h2 {
+      font-size: 40px;
+    }
+
+    .treatment-hero img {
+      height: 420px;
+    }
+
+    .process-section {
+      grid-template-columns: 1fr 1.2fr;
+      align-items: center;
+      padding: 70px 100px;
+      gap: 80px;
+    }
+
+    .info-section {
+      grid-template-columns: 1fr 1fr;
+      padding: 70px 110px;
+    }
+
+    .info-section h2 {
+      grid-column: 1 / -1;
+      text-align: center;
+    }
+  }
+</style>

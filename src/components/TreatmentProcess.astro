@@ -1,0 +1,93 @@
+---
+const {
+  title,
+  image
+} = Astro.props;
+---
+
+<section class="process-section">
+
+  <img src={image} alt="" />
+
+  <div>
+
+    <h2>{title}</h2>
+
+    <ol>
+
+      <li>
+        <strong>Vi starter roligt</strong><br>
+        Du bliver mødt i trygge og rolige omgivelser.
+      </li>
+
+      <li>
+        <strong>Behandlingen tilpasses dig</strong><br>
+        Fokus er på dine behov og din proces.
+      </li>
+
+      <li>
+        <strong>Krop og nervesystem falder til ro</strong><br>
+        Mange oplever dyb afslapning og nærvær.
+      </li>
+
+      <li>
+        <strong>Du går herfra lettere</strong><br>
+        Med mere ro, balance og klarhed.
+      </li>
+
+    </ol>
+
+  </div>
+
+</section>
+
+<style>
+
+  .process-section {
+    padding: 45px 24px;
+
+    background: var(--beige);
+
+    border-bottom: 1px solid var(--brown);
+
+    display: grid;
+    gap: 32px;
+  }
+
+  .process-section img {
+    width: 100%;
+  }
+
+  .process-section h2 {
+    font-size: 30px;
+
+    margin-bottom: 24px;
+  }
+
+  ol {
+    display: grid;
+
+    gap: 18px;
+
+    list-style-position: inside;
+  }
+
+  li {
+    line-height: 1.6;
+  }
+
+  @media (min-width: 900px) {
+
+    .process-section {
+      grid-template-columns: 1fr 1.2fr;
+
+      align-items: center;
+
+      padding: 70px 100px;
+
+      gap: 80px;
+    }
+
+  }
+
+</style>

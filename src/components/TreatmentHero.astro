@@ -1,0 +1,103 @@
+---
+const {
+  title,
+  subtitle,
+  text,
+  image
+} = Astro.props;
+---
+
+<section class="treatment-hero">
+
+  <div class="hero-text">
+
+    <h1>{title}</h1>
+
+    <h2>{subtitle}</h2>
+
+    <p>{text}</p>
+
+    <a href="/kontakt" class="btn">
+      Book din tid
+    </a>
+
+  </div>
+
+  <img src={image} alt="" />
+
+</section>
+
+<style>
+
+  .treatment-hero {
+    padding: 45px 24px;
+
+    background: var(--beige);
+
+    border-bottom: 1px solid var(--brown);
+
+    display: grid;
+    gap: 32px;
+  }
+
+  .hero-text {
+    max-width: 520px;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+
+    margin-bottom: 18px;
+  }
+
+  .hero-text h2 {
+    font-size: 30px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 28px;
+  }
+
+  .treatment-hero img {
+    width: 100%;
+
+    border-radius: 0 0 80px 0;
+
+    object-fit: cover;
+  }
+
+  @media (min-width: 900px) {
+
+    .treatment-hero {
+      grid-template-columns: 1fr 1.25fr;
+
+      align-items: center;
+
+      padding: 70px 100px;
+
+      gap: 80px;
+    }
+
+    .hero-text h1 {
+      font-size: 56px;
+    }
+
+    .hero-text h2 {
+      font-size: 40px;
+    }
+
+    .treatment-hero img {
+      height: 420px;
+    }
+
+  }
+
+</style>

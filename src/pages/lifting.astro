@@ -1,0 +1,243 @@
+---
+import Layout from '../layouts/Layout.astro';
+import IndexCta from '../components/IndexCta.astro';
+import Testimonials from '../components/Testimonials.astro';
+---
+
+<Layout>
+
+  <section class="treatment-hero">
+
+    <div class="hero-text">
+
+      <h1>Japansk Lifting</h1>
+
+      <h2>
+        Naturlig ansigtsbehandling med fokus på
+        glød, ro og balance
+      </h2>
+
+      <p>
+        Japansk lifting er en blid og afslappende behandling,
+        der arbejder med ansigtets muskler, spændinger og
+        kroppens energi. Behandlingen støtter både velvære,
+        afslapning og naturlig glød.
+      </p>
+
+      <a href="/kontakt" class="btn">
+        Book din tid
+      </a>
+
+    </div>
+
+    <img src="/images/lifting-hero.webp" alt="" />
+
+  </section>
+
+  <section class="process-section">
+
+    <img src="/images/lifting-room.webp" alt="" />
+
+    <div>
+
+      <h2>Sådan foregår det</h2>
+
+      <ol>
+
+        <li>
+          <strong>Vi starter roligt</strong><br>
+          Behandlingen foregår i rolige og trygge omgivelser.
+        </li>
+
+        <li>
+          <strong>Ansigt og nervesystem afspændes</strong><br>
+          Fokus er på afslapning, cirkulation og balance.
+        </li>
+
+        <li>
+          <strong>Kroppen får ro</strong><br>
+          Mange oplever dyb afslapning og nærvær under behandlingen.
+        </li>
+
+        <li>
+          <strong>Du går herfra lettere</strong><br>
+          Med mere glød, ro og forbindelse til dig selv.
+        </li>
+
+      </ol>
+
+    </div>
+
+  </section>
+
+  <section class="info-section">
+
+    <h2>Hvad er japansk lifting?</h2>
+
+    <p>
+      Japansk lifting er en naturlig ansigtsbehandling,
+      der kombinerer afslappende teknikker med fokus på
+      balance, velvære og ansigtets naturlige glød.
+    </p>
+
+    <p>
+      Behandlingen arbejder både med huden, musklerne og
+      nervesystemet og opleves af mange som både beroligende
+      og revitaliserende.
+    </p>
+
+  </section>
+
+  <IndexCta />
+
+  <Testimonials />
+
+</Layout>
+
+<style>
+
+  .treatment-hero {
+    padding: 45px 24px;
+
+    background: var(--beige);
+
+    border-bottom: 1px solid var(--brown);
+
+    display: grid;
+    gap: 32px;
+  }
+
+  .hero-text {
+    max-width: 520px;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+
+    margin-bottom: 18px;
+  }
+
+  .hero-text h2 {
+    font-size: 30px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 28px;
+  }
+
+  .treatment-hero img {
+    width: 100%;
+
+    border-radius: 0 0 80px 0;
+
+    object-fit: cover;
+  }
+
+  .process-section {
+    padding: 45px 24px;
+
+    background: var(--beige);
+
+    border-bottom: 1px solid var(--brown);
+
+    display: grid;
+    gap: 32px;
+  }
+
+  .process-section img {
+    width: 100%;
+  }
+
+  .process-section h2,
+  .info-section h2 {
+    font-size: 30px;
+
+    margin-bottom: 24px;
+  }
+
+  ol {
+    display: grid;
+
+    gap: 18px;
+
+    list-style-position: inside;
+  }
+
+  li {
+    line-height: 1.6;
+  }
+
+  .info-section {
+    padding: 50px 24px;
+
+    background: var(--sand);
+
+    border-bottom: 1px solid var(--brown);
+
+    display: grid;
+    gap: 24px;
+  }
+
+  .info-section p {
+    line-height: 1.7;
+
+    font-size: 16px;
+  }
+
+  @media (min-width: 900px) {
+
+    .treatment-hero {
+      grid-template-columns: 1fr 1.25fr;
+
+      align-items: center;
+
+      padding: 70px 100px;
+
+      gap: 80px;
+    }
+
+    .hero-text h1 {
+      font-size: 56px;
+    }
+
+    .hero-text h2 {
+      font-size: 40px;
+    }
+
+    .treatment-hero img {
+      height: 420px;
+    }
+
+    .process-section {
+      grid-template-columns: 1fr 1.2fr;
+
+      align-items: center;
+
+      padding: 70px 100px;
+
+      gap: 80px;
+    }
+
+    .info-section {
+      grid-template-columns: 1fr 1fr;
+
+      padding: 70px 110px;
+    }
+
+    .info-section h2 {
+      grid-column: 1 / -1;
+
+      text-align: center;
+    }
+
+  }
+
+</style>
