@@ -12,89 +12,82 @@
       Mine behandlinger er skabt til at støtte dig i at finde mere ro, styrke og nærvær i din hverdag.
     </p>
 
-    <img class="flower" src="/images/flower-small.svg" alt="" />
+    <img class="butterfly" src="/images/sommerfugl.png" alt="" />
 
   </div>
 
   <div class="hero-image">
 
-    <img src="/images/prices-hero.webp" alt="" />
+    <img src="/images/græs.png" alt="" />
 
   </div>
 
 </section>
 
 <style>
-
   .price-hero {
     display: grid;
-
     background: var(--light-green);
-
     border-bottom: 1px solid var(--brown);
   }
 
   .hero-text {
-    padding: 55px 24px;
+    padding: 42px 24px;
   }
 
   .hero-text h1 {
-    font-size: 42px;
-
+    font-size: 34px;
     line-height: 1.15;
-
-    margin-bottom: 18px;
-
-    max-width: 500px;
+    margin-bottom: 16px;
+    max-width: 420px;
   }
 
   .line {
     width: 80px;
-    height: 1px;
-
+    height: 0.5px;
     background: var(--brown);
-
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   .hero-text p {
-    max-width: 350px;
-
-    line-height: 1.7;
-
+    max-width: 330px;
+    line-height: 1.6;
     font-style: italic;
   }
 
-  .flower {
-    width: 150px;
-
-    margin-top: 35px;
-
-    opacity: 0.6;
+  .butterfly {
+    width: 80px;
+    margin-top: 20px;
+    
   }
 
   .hero-image img {
     width: 100%;
-
-    height: 100%;
-
+    height: 260px;
     object-fit: cover;
   }
 
   @media (min-width: 900px) {
-
     .price-hero {
-      grid-template-columns: 1fr 1.2fr;
+      grid-template-columns: 0.9fr 1.1fr;
+      min-height: 360px;
     }
 
     .hero-text {
-      padding: 85px 70px;
+      padding: 59px 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .hero-text h1 {
-      font-size: 58px;
+      font-size: 44px;
     }
 
+    .hero-image img {
+      height: 410px;
+      width: 500px;
+      margin-left: 200px;
+    }
   }
-
 </style>
