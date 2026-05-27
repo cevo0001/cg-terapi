@@ -1,0 +1,161 @@
+<form method="POST" id="form" class="contact-form">
+  <input
+    type="hidden"
+    name="access_key"
+    value="DIN_WEB3FORMS_ACCESS_KEY"
+  />
+
+  <h2>Send mig en besked for booking af tid</h2>
+
+  <label>
+    Fulde navn
+    <input type="text" name="name" required />
+  </label>
+
+  <label>
+    Mail
+    <input type="email" name="email" required />
+  </label>
+
+  <label>
+    Behandling
+    <select name="treatment" required>
+      <option value="">Vælg behandling</option>
+      <option value="Psykoterapi">Psykoterapi</option>
+      <option value="Japansk ansigtsakupunktur">Japansk ansigtsakupunktur</option>
+      <option value="Japansk lifting">Japansk lifting</option>
+      <option value="Astrologi">Astrologi</option>
+      <option value="Spørgsmål">Jeg har et spørgsmål</option>
+    </select>
+  </label>
+
+  <label>
+    Besked
+    <textarea name="message" required></textarea>
+  </label>
+
+  <button type="submit">Send besked</button>
+
+  <p id="result"></p>
+</form>
+
+<script is:inline>
+  const form = document.getElementById("form");
+  const result = document.getElementById("result");
+
+  if (form && result) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      result.innerHTML = "Sender besked...";
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      })
+        .then(async (response) => {
+          const data = await response.json();
+
+          if (response.status === 200) {
+            result.innerHTML = "Tak! Din besked er sendt.";
+            form.reset();
+          } else {
+            result.innerHTML = data.message;
+          }
+        })
+        .catch(() => {
+          result.innerHTML = "Noget gik galt. Prøv igen senere.";
+        });
+    });
+  }
+</script>
+
+<style>
+  .contact-form {
+    padding: 35px 22px;
+    border: 1px solid var(--brown);
+    border-radius: 18px;
+    background: var(--beige);
+
+    display: grid;
+    gap: 18px;
+  }
+
+  .contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    display: grid;
+    gap: 8px;
+
+    font-size: 16px;
+    font-style: italic;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid var(--brown);
+    border-radius: 999px;
+
+    background: var(--white);
+
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+  }
+
+  textarea {
+    min-height: 140px;
+    border-radius: 18px;
+    resize: vertical;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border: 2px solid var(--dark-green);
+  }
+
+  button {
+    justify-self: center;
+
+    margin-top: 8px;
+
+    padding: 13px 34px;
+
+    border-radius: 999px;
+    border: 1px solid var(--brown);
+
+    background: var(--dark-green);
+    color: var(--white);
+
+    font-family: 'Source Serif 4', serif;
+    font-size: 17px;
+
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: var(--brown);
+  }
+
+  #result {
+    text-align: center;
+    font-size: 15px;
+  }
+</style>
