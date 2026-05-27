@@ -1,0 +1,100 @@
+<section class="price-hero">
+
+  <div class="hero-text">
+
+    <h1>
+      Investér i dig selv og din balance
+    </h1>
+
+    <div class="line"></div>
+
+    <p>
+      Mine behandlinger er skabt til at støtte dig i at finde mere ro, styrke og nærvær i din hverdag.
+    </p>
+
+    <img class="flower" src="/images/flower-small.svg" alt="" />
+
+  </div>
+
+  <div class="hero-image">
+
+    <img src="/images/prices-hero.webp" alt="" />
+
+  </div>
+
+</section>
+
+<style>
+
+  .price-hero {
+    display: grid;
+
+    background: var(--light-green);
+
+    border-bottom: 1px solid var(--brown);
+  }
+
+  .hero-text {
+    padding: 55px 24px;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+
+    max-width: 500px;
+  }
+
+  .line {
+    width: 80px;
+    height: 1px;
+
+    background: var(--brown);
+
+    margin-bottom: 20px;
+  }
+
+  .hero-text p {
+    max-width: 350px;
+
+    line-height: 1.7;
+
+    font-style: italic;
+  }
+
+  .flower {
+    width: 150px;
+
+    margin-top: 35px;
+
+    opacity: 0.6;
+  }
+
+  .hero-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  @media (min-width: 900px) {
+
+    .price-hero {
+      grid-template-columns: 1fr 1.2fr;
+    }
+
+    .hero-text {
+      padding: 85px 70px;
+    }
+
+    .hero-text h1 {
+      font-size: 58px;
+    }
+
+  }
+
+</style>

@@ -1,0 +1,186 @@
+<section class="price-cards">
+
+  <h2>Behandlinger og Priser</h2>
+
+  <div class="line"></div>
+
+  <div class="cards-grid">
+
+    <div class="price-card">
+      <img src="/images/therapy-icon.webp" alt="" />
+
+      <h3>PSYKOTERAPI</h3>
+
+      <p>
+        Samtaleterapi med fokus på krop, sind, overgange og nervesystem.
+      </p>
+
+      <span>50 min</span>
+
+      <strong>750 kr</strong>
+
+      <a href="/psykoterapi">Læs mere</a>
+    </div>
+
+    <div class="price-card">
+      <img src="/images/online-icon.webp" alt="" />
+
+      <h3>ONLINE TERAPI</h3>
+
+      <p>
+        Samtaleterapi med fokus på krop, sind, overgange og nervesystem.
+      </p>
+
+      <span>60 min</span>
+
+      <strong>850 kr</strong>
+
+      <a href="/psykoterapi">Læs mere</a>
+    </div>
+
+    <div class="price-card">
+      <img src="/images/lifting-icon.webp" alt="" />
+
+      <h3>JAPANSK LIFTING</h3>
+
+      <p>
+        Samtaleterapi med fokus på krop, sind, overgange og nervesystem.
+      </p>
+
+      <span>60 min</span>
+
+      <strong>1000 kr</strong>
+
+      <a href="/lifting">Læs mere</a>
+    </div>
+
+    <div class="price-card">
+      <img src="/images/astro-icon.webp" alt="" />
+
+      <h3>ASTROLOGI</h3>
+
+      <p>
+        Samtaleterapi med fokus på krop, sind, overgange og nervesystem.
+      </p>
+
+      <span>60 min</span>
+
+      <strong>900 kr</strong>
+
+      <a href="/astrologi">Læs mere</a>
+    </div>
+
+  </div>
+
+  <p class="moms">
+    Alle priser er inkl. moms
+  </p>
+
+</section>
+
+<style>
+
+  .price-cards {
+    padding: 55px 24px;
+
+    background: var(--cream);
+
+    border-bottom: 1px solid var(--brown);
+
+    text-align: center;
+  }
+
+  .price-cards h2 {
+    font-size: 42px;
+
+    margin-bottom: 10px;
+  }
+
+  .line {
+    width: 240px;
+    height: 1px;
+
+    background: var(--brown);
+
+    margin: 0 auto 45px;
+  }
+
+  .cards-grid {
+    display: grid;
+
+    gap: 28px;
+  }
+
+  .price-card {
+    padding: 28px 22px;
+
+    border: 1px solid var(--brown);
+
+    border-radius: 14px;
+  }
+
+  .price-card img {
+    width: 90px;
+    height: 90px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin: 0 auto 18px;
+  }
+
+  .price-card h3 {
+    font-size: 20px;
+
+    margin-bottom: 14px;
+  }
+
+  .price-card p {
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+  }
+
+  .price-card span,
+  .price-card strong {
+    display: block;
+
+    margin-bottom: 10px;
+  }
+
+  .price-card a {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 10px 24px;
+
+    border: 1px solid var(--brown);
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    color: var(--brown);
+  }
+
+  .moms {
+    margin-top: 35px;
+  }
+
+  @media (min-width: 900px) {
+
+    .price-cards {
+      padding: 70px 80px;
+    }
+
+    .cards-grid {
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 45px;
+    }
+
+  }
+
+</style>

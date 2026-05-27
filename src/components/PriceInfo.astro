@@ -1,0 +1,91 @@
+<section class="price-info">
+
+  <img src="/images/price-info.webp" alt="" />
+
+  <div class="info-content">
+
+    <h2>Vigtigt at vide</h2>
+
+    <p>
+      Afbud skal ske senest 24 timer før din aftale, ellers betales det fulde beløb.
+    </p>
+
+    <p>
+      Hvis du har spørgsmål eller er i tvivl om, hvilken behandling der er den rigtige for dig, er du altid velkommen til at kontakte mig.
+    </p>
+
+    <p>
+      Jeg glæder mig til at støtte dig på din rejse.
+    </p>
+
+    <a href="/kontakt">
+      Kontakt mig
+    </a>
+
+  </div>
+
+</section>
+
+<style>
+
+  .price-info {
+    display: grid;
+
+    background: var(--beige);
+
+    border-bottom: 1px solid var(--brown);
+  }
+
+  .price-info img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  .info-content {
+    padding: 55px 24px;
+  }
+
+  .info-content h2 {
+    font-size: 42px;
+
+    margin-bottom: 25px;
+  }
+
+  .info-content p {
+    line-height: 1.7;
+
+    margin-bottom: 18px;
+  }
+
+  .info-content a {
+    display: inline-block;
+
+    margin-top: 18px;
+
+    padding: 14px 32px;
+
+    background: var(--dark-green);
+
+    color: var(--white);
+
+    border-radius: 999px;
+
+    text-decoration: none;
+  }
+
+  @media (min-width: 900px) {
+
+    .price-info {
+      grid-template-columns: 420px 1fr;
+    }
+
+    .info-content {
+      padding: 70px 80px;
+    }
+
+  }
+
+</style>
