@@ -1,3 +1,21 @@
+---
+const {
+  itemOne,
+  itemTwo,
+  itemThree,
+  itemFour,
+  itemFive,
+  itemSix,
+
+  textOne,
+  textTwo,
+  textThree,
+  textFour,
+  textFive,
+  textSix
+} = Astro.props;
+---
+
 <section class="work-section">
 
   <h2>Hvad kan vi arbejde med?</h2>
@@ -8,14 +26,9 @@
 
       <img src="/images/icon.svg" alt="" />
 
-      <h3>
-        Stress &<br>
-        Nervesystem
-      </h3>
+      <h3>{itemOne}</h3>
 
-      <p>
-        Skab mere ro i kroppen og balance i nervesystemet.
-      </p>
+      <p>{textOne}</p>
 
     </div>
 
@@ -24,12 +37,11 @@
       <img src="/images/icon.svg" alt="" />
 
       <h3>
-        Selvværd &<br>
-        Selvtillid
+        {itemTwo}
       </h3>
 
       <p>
-        Styrk forbindelsen til dig selv og dine grænser.
+        {textTwo}
       </p>
 
     </div>
@@ -38,13 +50,12 @@
 
       <img src="/images/icon.svg" alt="" />
 
-      <h3>
-        Overgangs-<br>
-        faser
-      </h3>
+      
+        <h3>{itemThree}</h3>
+      
 
       <p>
-        Få støtte i perioder med forandring og udvikling.
+        {textThree}
       </p>
 
     </div>
@@ -53,13 +64,10 @@
 
       <img src="/images/icon.svg" alt="" />
 
-      <h3>
-        Krop &<br>
-        Forbindelse
-      </h3>
+      <h3>{itemFour}</h3>
 
       <p>
-        Skab mere kontakt til kroppen og dine behov.
+        {textFour}
       </p>
 
     </div>
@@ -68,13 +76,10 @@
 
       <img src="/images/icon.svg" alt="" />
 
-      <h3>
-        Tankemønstre &<br>
-        Indre ro
-      </h3>
+      <h3>{itemFive}</h3>
 
       <p>
-        Få mere klarhed, nærvær og ro i hverdagen.
+        {textFive}
       </p>
 
     </div>
@@ -83,13 +88,10 @@
 
       <img src="/images/icon.svg" alt="" />
 
-      <h3>
-        Healing &<br>
-        Udvikling
-      </h3>
+      <h3>{itemSix}</h3>
 
       <p>
-        Støtte til personlig udvikling og indre balance.
+        {textSix}
       </p>
 
     </div>

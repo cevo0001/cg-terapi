@@ -1,243 +1,54 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+import TreatmentHero from '../components/TreatmentHero.astro';
+import TreatmentWork from '../components/TreatmentWork.astro';
+import TreatmentProcess from '../components/TreatmentProcess.astro';
+import TreatmentInfo from '../components/TreatmentInfo.astro';
+
 import IndexCta from '../components/IndexCta.astro';
 import Testimonials from '../components/Testimonials.astro';
 ---
 
 <Layout>
 
-  <section class="treatment-hero">
+<TreatmentHero
+  title="Astrologi"
+  subtitle="Få indsigt i dine mønstre, relationer og personlige udvikling"
+  text="Astrologi kan skabe større forståelse for dig selv, dine relationer og de livstemaer, du bevæger dig i."
+  image="/images/astrologi.webp"
+/>
 
-    <div class="hero-text">
+<TreatmentWork
 
-      <h1>Astrologi</h1>
+  itemOne="Personlig udvikling"
+  itemTwo="Relationer"
+  itemThree="Livsretning"
+  itemFour="Mønstre"
+  itemFive="Selvforståelse"
+  itemSix="Indre balance"
 
-      <h2>
-        Få indsigt i dig selv, dine mønstre
-        og din personlige udvikling
-      </h2>
+  textOne="Få indsigt i dine styrker og udviklingsområder."
+  textTwo="Forstå dynamikker i dine relationer."
+  textThree="Skab klarhed omkring retning og valg."
+  textFour="Bliv bevidst om gentagende mønstre."
+  textFive="Få større forståelse for dig selv."
+  textSix="Skab mere ro og balance i hverdagen."
+/>
 
-      <p>
-        Astrologi kan skabe større forståelse for dig selv,
-        dine relationer og de livstemaer, du bevæger dig i.
-        Sessionen tager udgangspunkt i dit personlige horoskop
-        og tilpasses dine behov og spørgsmål.
-      </p>
+<TreatmentProcess
+  title="Sådan foregår det"
+  image="/images/astrologi-room.webp"
+/>
 
-      <a href="/kontakt" class="btn">
-        Book din tid
-      </a>
+<TreatmentInfo
+  title="Hvad kan astrologi bruges til?"
+  textOne="Astrologi kan skabe indsigt i personlighed, relationer og livstemaer og bruges som et refleksionsværktøj til større selvforståelse."
+  textTwo="Sessionerne tager udgangspunkt i dit personlige horoskop og tilpasses dine spørgsmål, behov og udviklingsproces."
+/>
 
-    </div>
+<IndexCta />
 
-    <img src="/images/astrologi-hero.webp" alt="" />
-
-  </section>
-
-  <section class="process-section">
-
-    <img src="/images/astrologi-room.webp" alt="" />
-
-    <div>
-
-      <h2>Sådan foregår det</h2>
-
-      <ol>
-
-        <li>
-          <strong>Vi tager udgangspunkt i dig</strong><br>
-          Sessionen tager afsæt i dit fødselshoroskop.
-        </li>
-
-        <li>
-          <strong>Vi udforsker dine mønstre</strong><br>
-          Fokus kan være relationer, livsretning eller personlig udvikling.
-        </li>
-
-        <li>
-          <strong>Du får nye perspektiver</strong><br>
-          Astrologien bruges som et refleksionsværktøj.
-        </li>
-
-        <li>
-          <strong>Du går herfra med indsigt</strong><br>
-          Og en større forståelse for dig selv og dine processer.
-        </li>
-
-      </ol>
-
-    </div>
-
-  </section>
-
-  <section class="info-section">
-
-    <h2>Hvad kan astrologi bruges til?</h2>
-
-    <p>
-      Astrologi kan skabe indsigt i personlighed, relationer,
-      livstemaer og udviklingsprocesser. Sessionerne bruges
-      som et refleksionsrum med fokus på nærvær og forståelse.
-    </p>
-
-    <p>
-      Formålet er ikke at fortælle dig, hvem du er,
-      men at skabe større forbindelse til dine egne mønstre,
-      behov og potentialer.
-    </p>
-
-  </section>
-
-  <IndexCta />
-
-  <Testimonials />
+<Testimonials />
 
 </Layout>
-
-<style>
-
-  .treatment-hero {
-    padding: 45px 24px;
-
-    background: var(--beige);
-
-    border-bottom: 1px solid var(--brown);
-
-    display: grid;
-    gap: 32px;
-  }
-
-  .hero-text {
-    max-width: 520px;
-  }
-
-  .hero-text h1 {
-    font-size: 42px;
-
-    margin-bottom: 18px;
-  }
-
-  .hero-text h2 {
-    font-size: 30px;
-
-    line-height: 1.2;
-
-    margin-bottom: 20px;
-  }
-
-  .hero-text p {
-    font-size: 16px;
-
-    line-height: 1.7;
-
-    margin-bottom: 28px;
-  }
-
-  .treatment-hero img {
-    width: 100%;
-
-    border-radius: 0 0 80px 0;
-
-    object-fit: cover;
-  }
-
-  .process-section {
-    padding: 45px 24px;
-
-    background: var(--beige);
-
-    border-bottom: 1px solid var(--brown);
-
-    display: grid;
-    gap: 32px;
-  }
-
-  .process-section img {
-    width: 100%;
-  }
-
-  .process-section h2,
-  .info-section h2 {
-    font-size: 30px;
-
-    margin-bottom: 24px;
-  }
-
-  ol {
-    display: grid;
-
-    gap: 18px;
-
-    list-style-position: inside;
-  }
-
-  li {
-    line-height: 1.6;
-  }
-
-  .info-section {
-    padding: 50px 24px;
-
-    background: var(--sand);
-
-    border-bottom: 1px solid var(--brown);
-
-    display: grid;
-    gap: 24px;
-  }
-
-  .info-section p {
-    line-height: 1.7;
-
-    font-size: 16px;
-  }
-
-  @media (min-width: 900px) {
-
-    .treatment-hero {
-      grid-template-columns: 1fr 1.25fr;
-
-      align-items: center;
-
-      padding: 70px 100px;
-
-      gap: 80px;
-    }
-
-    .hero-text h1 {
-      font-size: 56px;
-    }
-
-    .hero-text h2 {
-      font-size: 40px;
-    }
-
-    .treatment-hero img {
-      height: 420px;
-    }
-
-    .process-section {
-      grid-template-columns: 1fr 1.2fr;
-
-      align-items: center;
-
-      padding: 70px 100px;
-
-      gap: 80px;
-    }
-
-    .info-section {
-      grid-template-columns: 1fr 1fr;
-
-      padding: 70px 110px;
-    }
-
-    .info-section h2 {
-      grid-column: 1 / -1;
-
-      text-align: center;
-    }
-
-  }
-
-</style>
