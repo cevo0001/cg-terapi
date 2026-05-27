@@ -2,7 +2,7 @@
   <input
     type="hidden"
     name="access_key"
-    value="value='a074c515-b024-4bc7-b35e-c2dc8cabf9c2'"
+    value="a074c515-b024-4bc7-b35e-c2dc8cabf9c2"
   />
 
   <h2>Send mig en besked for booking af tid</h2>
@@ -29,9 +29,10 @@
     </select>
   </label>
 
-  <label>
+  <label class="message-label">
     Besked
-    <textarea name="message" required></textarea>
+    <textarea name="message" id="message" maxlength="200" required></textarea>
+    <span id="char-count">0 / 200</span>
   </label>
 
   <button type="submit">Send besked</button>
@@ -42,6 +43,14 @@
 <script is:inline>
   const form = document.getElementById("form");
   const result = document.getElementById("result");
+  const message = document.getElementById("message");
+  const charCount = document.getElementById("char-count");
+
+  if (message && charCount) {
+    message.addEventListener("input", () => {
+      charCount.textContent = `${message.value.length} / 200`;
+    });
+  }
 
   if (form && result) {
     form.addEventListener("submit", function (e) {
@@ -67,6 +76,7 @@
           if (response.status === 200) {
             result.innerHTML = "Tak! Din besked er sendt.";
             form.reset();
+            charCount.textContent = "0 / 200";
           } else {
             result.innerHTML = data.message;
           }
@@ -97,7 +107,6 @@
   label {
     display: grid;
     gap: 8px;
-
     font-size: 16px;
     font-style: italic;
   }
@@ -106,7 +115,6 @@
   select,
   textarea {
     width: 100%;
-
     padding: 12px 14px;
 
     border: 1px solid var(--brown);
@@ -131,9 +139,19 @@
     border: 2px solid var(--dark-green);
   }
 
+  .message-label {
+    position: relative;
+  }
+
+  #char-count {
+    justify-self: end;
+    margin-top: 4px;
+    font-size: 13px;
+    opacity: 0.7;
+  }
+
   button {
     justify-self: center;
-
     margin-top: 8px;
 
     padding: 13px 34px;
