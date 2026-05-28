@@ -1,4 +1,4 @@
-# Teknisk dokumentation for Kismet gruppe 10 eksamen
+# Teknisk dokumentation for afsluttende eksamen - Charlotte Grøngaard
 
 Når man er flere der bidrager til en kodebase, lærer man hurtigt, at ens sædvanlige måder at gøre tingene på ikke nødvendigvis er logisk for alle.
 
