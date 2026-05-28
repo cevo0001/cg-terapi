@@ -1,7 +1,15 @@
 ---
 const {
   title,
-  image
+  image,
+  stepOneTitle,
+  stepOneText,
+  stepTwoTitle,
+  stepTwoText,
+  stepThreeTitle,
+  stepThreeText,
+  stepFourTitle,
+  stepFourText
 } = Astro.props;
 ---
 
@@ -16,25 +24,24 @@ const {
     <ol>
 
       <li>
-        <strong>Vi starter roligt</strong><br>
-        Du bliver mødt i trygge og rolige omgivelser.
-      </li>
+  <strong>{stepOneTitle}</strong><br>
+  {stepOneText}
+</li>
 
-      <li>
-        <strong>Behandlingen tilpasses dig</strong><br>
-        Fokus er på dine behov og din proces.
-      </li>
+<li>
+  <strong>{stepTwoTitle}</strong><br>
+  {stepTwoText}
+</li>
 
-      <li>
-        <strong>Krop og nervesystem falder til ro</strong><br>
-        Mange oplever dyb afslapning og nærvær.
-      </li>
+<li>
+  <strong>{stepThreeTitle}</strong><br>
+  {stepThreeText}
+</li>
 
-      <li>
-        <strong>Du går herfra lettere</strong><br>
-        Med mere ro, balance og klarhed.
-      </li>
-
+<li>
+  <strong>{stepFourTitle}</strong><br>
+  {stepFourText}
+</li>
     </ol>
 
   </div>

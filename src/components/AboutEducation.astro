@@ -5,16 +5,14 @@
     <h2>Mine uddannelser:</h2>
 
     <div class="education-grid">
-      <div>Uddannelse</div>
-      <div>Uddannelse</div>
-      <div>Uddannelse</div>
-      <div>Uddannelse</div>
+      <div>Samtaleterapeut 2026 & Psykoterapeut (færdig 2028) - eksistens instituttet</div>
+      <div>Astrolog 2026 - Skolen for Spirituel Astrologi</div>
+      <div>Metakognetiv Coach færdig 2020 - Mind instituttet </div>
+      <div>Japansk Lifting 2016 - Dig i Centrum & Ansigts arkupunktur 2016 - Dig i Centrum </div>
+      <div>Zoneterapeut 1992 - FDZ skolen</div>
+      
     </div>
 
-    <p>
-      Jeg arbejder bl.a. med samtaleterapi, kropsterapi, nervesystemsregulering,
-      intuitiv vejledning, energiarbejde og mental træning.
-    </p>
   </div>
 </section>
 
@@ -51,23 +49,21 @@
     min-height: 110px;
     border: 1px solid var(--brown);
     border-radius: 10px;
-    background: var(--dark-green);
-    color: var(--cream);
+    background: var(--beige);
+    color: var(--brown);
     display: flex;
     align-items: center;
     justify-content: center;
-    text-transform: uppercase;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 500;
   }
 
   .education-grid div:nth-child(even) {
     background: var(--light-green);
   }
 
-  .education-content p {
-    font-size: 16px;
-    line-height: 1.7;
-    text-align: center;
-  }
+
 
   @media (min-width: 900px) {
     .education-section {
@@ -82,7 +78,7 @@
     }
 
     .education-grid {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       max-width: 650px;
       margin: 0 0 28px;
     }
