@@ -90,24 +90,28 @@
 
 <style>
   .contact-form {
-    padding: 35px 22px;
+    padding: 24px 18px;
     border: 1px solid var(--brown);
-    border-radius: 18px;
+    border-radius: 16px;
     background: var(--beige);
 
     display: grid;
-    gap: 18px;
+    gap: 14px;
+
+    max-width: 520px;
+    margin: 0 auto;
   }
 
   .contact-form h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 4px;
   }
 
   label {
     display: grid;
-    gap: 8px;
-    font-size: 16px;
+    gap: 6px;
+    font-size: 15px;
     font-style: italic;
   }
 
@@ -115,7 +119,7 @@
   select,
   textarea {
     width: 100%;
-    padding: 12px 14px;
+    padding: 10px 12px;
 
     border: 1px solid var(--brown);
     border-radius: 999px;
@@ -123,12 +127,12 @@
     background: var(--white);
 
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   textarea {
-    min-height: 140px;
-    border-radius: 18px;
+    min-height: 110px;
+    border-radius: 16px;
     resize: vertical;
   }
 
@@ -145,16 +149,16 @@
 
   #char-count {
     justify-self: end;
-    margin-top: 4px;
-    font-size: 13px;
+    margin-top: 2px;
+    font-size: 12px;
     opacity: 0.7;
   }
 
   button {
     justify-self: center;
-    margin-top: 8px;
+    margin-top: 4px;
 
-    padding: 13px 34px;
+    padding: 10px 24px;
 
     border-radius: 999px;
     border: 1px solid var(--brown);
@@ -162,10 +166,12 @@
     background: var(--dark-green);
     color: var(--white);
 
-    font-family: 'Source Serif 4', serif;
-    font-size: 17px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 15px;
 
     cursor: pointer;
+
+    transition: 0.3s;
   }
 
   button:hover {
@@ -174,6 +180,19 @@
 
   #result {
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  @media (min-width: 900px) {
+
+    .contact-form {
+      padding: 30px 28px;
+      max-width: 560px;
+    }
+
+    .contact-form h2 {
+      font-size: 28px;
+    }
+
   }
 </style>

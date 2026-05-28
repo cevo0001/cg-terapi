@@ -30,40 +30,43 @@ const {
 <style>
 
   .treatment-hero {
-    padding: 45px 24px;
-
+    padding: 30px 20px;
     background: var(--beige);
-
     border-bottom: 1px solid var(--brown);
 
     display: grid;
-    gap: 32px;
+    gap: 24px;
+
+    align-items: center;
   }
 
   .hero-text {
-    max-width: 520px;
+    max-width: 420px;
   }
 
   .hero-text h1 {
-    font-size: 42px;
-
-    margin-bottom: 18px;
+    font-size: 34px;
+    line-height: 1.05;
+    margin-bottom: 12px;
   }
 
   .hero-text h2 {
-    font-size: 30px;
-
-    line-height: 1.2;
-
+    font-size: 22px;
+    line-height: 1.3;
     margin-bottom: 20px;
+    font-weight: 300;
   }
 
- 
+  .hero-text .btn {
+    padding: 10px 22px;
+    font-size: 15px;
+  }
 
   .treatment-hero img {
     width: 100%;
+    height: 230px;
 
-    border-radius: 0 0 80px 0;
+    border-radius: 0 0 55px 0;
 
     object-fit: cover;
   }
@@ -71,25 +74,31 @@ const {
   @media (min-width: 900px) {
 
     .treatment-hero {
-      grid-template-columns: 1fr 1.25fr;
+      grid-template-columns: 0.9fr 1.1fr;
 
-      align-items: center;
+      padding: 40px 90px;
 
-      padding: 60px 100px;
+      gap: 50px;
+    }
 
-      gap: 80px;
+    .hero-text {
+      max-width: 460px;
     }
 
     .hero-text h1 {
-      font-size: 56px;
+      font-size: 42px;
+      margin-bottom: 14px;
     }
 
     .hero-text h2 {
-      font-size: 40px;
+      font-size: 28px;
+      margin-bottom: 24px;
     }
 
     .treatment-hero img {
-      height: 430px;
+      height: 320px;
+
+      border-radius: 0 0 70px 0;
     }
 
   }
