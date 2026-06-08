@@ -19,7 +19,7 @@
 
       <strong>750 kr</strong>
 
-      <a href="/psykoterapi">Læs mere</a>
+      <a href="/psykoterapi" class="btn-secondary">Læs mere</a>
     </div>
 
     <div class="price-card">
@@ -35,7 +35,7 @@
 
       <strong>850 kr</strong>
 
-      <a href="/akupunktur">Læs mere</a>
+      <a href="/akupunktur" class="btn-secondary">Læs mere</a>
     </div>
 
     <div class="price-card">
@@ -51,7 +51,7 @@
 
       <strong>1000 kr</strong>
 
-      <a href="/lifting">Læs mere</a>
+      <a href="/lifting" class="btn-secondary">Læs mere</a>
     </div>
 
     <div class="price-card">
@@ -67,7 +67,7 @@
 
       <strong>900 kr</strong>
 
-      <a href="/astrologi">Læs mere</a>
+      <a href="/astrologi" class="btn-secondary">Læs mere</a>
     </div>
 
   </div>
@@ -112,12 +112,16 @@
   }
 
   .price-card {
-    padding: 28px 22px;
+  padding: 28px 22px;
 
-    border: 1px solid var(--brown);
-    background-color: var(--beige);
-    border-radius: 14px;
-  }
+  border: 1px solid var(--brown);
+  background-color: var(--beige);
+  border-radius: 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
   .price-card img {
     width: 90px;
@@ -136,34 +140,22 @@
     margin-bottom: 14px;
   }
 
-  .price-card p {
-    line-height: 1.6;
+ .price-card p {
+  line-height: 1.6;
+  margin-bottom: 20px;
 
-    margin-bottom: 20px;
-  }
+  min-height: 80px;
+}
 
-  .price-card span,
-  .price-card strong {
-    display: block;
+ .price-card span,
+.price-card strong {
+  display: block;
+  margin-bottom: 10px;
+}
 
-    margin-bottom: 10px;
-  }
-
-  .price-card a {
-    display: inline-block;
-
-    margin-top: 12px;
-
-    padding: 10px 24px;
-
-    border: 1px solid var(--brown);
-
-    border-radius: 999px;
-
-    text-decoration: none;
-
-    color: var(--brown);
-  }
+ .price-card a {
+  margin-top: auto;
+}
 
   .moms {
     margin-top: 35px;

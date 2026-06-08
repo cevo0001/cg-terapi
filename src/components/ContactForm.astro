@@ -12,10 +12,17 @@
     <input type="text" name="name" required />
   </label>
 
-  <label>
+
+   <label>
     Mail
-    <input type="email" name="email" required />
-  </label>
+    <input
+     type="email"
+      name="email"
+      required
+      pattern=".+@.+\..+"
+    />
+    </label>
+
 
   <label>
     Behandling
@@ -129,6 +136,7 @@
     font-family: 'Source Sans 3', sans-serif;
     font-size: 15px;
   }
+
 
   textarea {
     min-height: 110px;
