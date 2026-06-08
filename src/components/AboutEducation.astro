@@ -1,5 +1,5 @@
 <section class="education-section">
-  <img class="education-image" src="/images/mineudd.png" alt="" />
+  <img class="education-image" src="/images/mineudd.webp" alt="" />
 
   <div class="education-content">
     <h2>Mine uddannelser:</h2>
@@ -43,24 +43,33 @@
   .education-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    max-width: 360px;
+    gap: 25px;
+    max-width: 380px;
     margin: 0 auto 28px;
   }
 
-  .education-grid div {
-    min-height: 110px;
-    border: 1px solid var(--brown);
-    border-radius: 10px;
-    background: var(--beige);
-    color: var(--brown);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    font-size: 13px;
-    font-weight: 500;
-  }
+.education-grid div {
+  min-height: 110px;
+  width: 130px;
+
+  border: 1px solid var(--brown);
+  border-radius: 10px;
+
+  background: var(--beige);
+  color: var(--brown);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  padding: 12px;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  text-align: left;
+  line-height: 1.4;
+}
 
   .education-grid div:nth-child(even) {
     background: var(--light-green);
@@ -72,8 +81,8 @@
     .education-section {
       grid-template-columns: 360px 1fr;
       align-items: center;
-      padding: 30px 60px;
-      gap: 90px;
+      padding: 50px 55px;
+      gap: 65px;
     }
 
     .education-content h2 {
@@ -95,7 +104,7 @@
     }
 
      .education-image {
-    width: 110%;
+    width: 75%;
    
   }
   }

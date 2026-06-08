@@ -115,14 +115,35 @@ navLinks.forEach((link) => {
   transform: translateY(0);
 }
 
-  .nav a {
-    text-decoration: none;
-    color: var(--brown);
+.nav a {
+  position: relative;
 
-    font-size: 20px;
-    font-family: 'Source Sans 3', sans-serif;
-    font-weight: 300;
-  }
+  text-decoration: none;
+  color: var(--brown);
+
+  font-size: 20px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
+}
+
+.nav a::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  width: 0;
+  height: 1px;
+
+  background: var(--brown);
+
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
 
   .nav .btn {
     margin: 10px auto 0;
