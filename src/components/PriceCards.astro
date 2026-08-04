@@ -22,21 +22,6 @@
       <a href="/psykoterapi" class="btn-secondary">Læs mere</a>
     </div>
 
-    <div class="price-card">
-      <img src="/images/prisicon2.png" alt="" />
-
-      <h3>ANSIGTSAKUPUNKTUR</h3>
-
-      <p>
-        En dybdegående behandling med fokus på spændinger og vitalitet.
-      </p>
-
-      <span>60 min</span>
-
-      <strong>850 kr</strong>
-
-      <a href="/akupunktur" class="btn-secondary">Læs mere</a>
-    </div>
 
     <div class="price-card">
       <img src="/images/prisicon3.png" alt="" />
@@ -54,21 +39,7 @@
       <a href="/lifting" class="btn-secondary">Læs mere</a>
     </div>
 
-    <div class="price-card">
-      <img src="/images/icon.png" alt="" />
-
-      <h3>ASTROLOGI</h3>
-
-      <p>
-        Samtaler der skaber indsigt i dine mønstre, potentialer og livstemaer.
-      </p>
-
-      <span>60 min</span>
-
-      <strong>900 kr</strong>
-
-      <a href="/astrologi" class="btn-secondary">Læs mere</a>
-    </div>
+ 
 
   </div>
 
@@ -161,18 +132,16 @@
     margin-top: 35px;
   }
 
-  @media (min-width: 900px) {
-
-    .price-cards {
-      padding: 70px 80px;
-    }
-
-    .cards-grid {
-      grid-template-columns: repeat(4, 1fr);
-
-      gap: 45px;
-    }
-
+@media (min-width: 900px) {
+  .price-cards {
+    padding: 70px 80px;
   }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 380px));
+    justify-content: center;
+    gap: 45px;
+  }
+}
 
 </style>

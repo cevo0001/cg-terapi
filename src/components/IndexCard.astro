@@ -4,16 +4,11 @@
 
   <div class="cards">
     <a href="/psykoterapi" class="card">
-      <img src="/images/psyko.webp" alt="" />
+      <img src="/images/psykoterapi.webp" alt="" />
       <h3>Psykoterapi</h3>
       <p>Samtaleterapi med fokus på nærvær, relationer og indre balance.</p>
     </a>
-
-    <a href="/akupunktur" class="card">
-      <img src="/images/akupunktur.webp" alt="" />
-      <h3>Ansigtsakupunktur</h3>
-      <p>Blid og rolig ansigtsakupunktur der støtter ro, glød og balance.</p>
-    </a>
+  
 
     <a href="/lifting" class="card">
       <img src="/images/lifting.webp" alt="" />
@@ -21,11 +16,7 @@
       <p>En dybt afspændende behandling for ansigt, krop og nervesystem.</p>
     </a>
 
-    <a href="/astrologi" class="card">
-      <img src="/images/astro.webp" alt="" />
-      <h3>Astrologi</h3>
-      <p>Indsigtsfulde samtaler med fokus på personlig udvikling og livstemaer.</p>
-    </a>
+
   </div>
 </section>
 
@@ -106,14 +97,16 @@
       margin-bottom: 40px;
     }
 
-    .cards {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 55px;
-      max-width: 1150px;
-    }
+  .cards {
+  grid-template-columns: repeat(2, minmax(0, 380px));
+  justify-content: center;
+  gap: 60px;
+  max-width: none;
+}
 
     .card img {
-      height: 145px;
+      height: 250px;
+      width: 100%;
     }
 
     .card h3 {
